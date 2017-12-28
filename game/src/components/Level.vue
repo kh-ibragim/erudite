@@ -3,34 +3,34 @@
 
     <template v-if="!markcl">
         <div class="columns is-mobile">
-            <div class="column"><a class="button is-info levelButton" v-on:click="clickMarker(allEvent)">Level 1 <br><span class="icon is-small"><i class="fa fa-unlock"></i></span></a></div>
-            <div class="column"><a class="button is-info levelButton" disabled>Level 2 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
-            <div class="column"><a class="button is-info levelButton" disabled>Level 3 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
-            <div class="column"><a class="button is-info levelButton" disabled>Level 4 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
+            <div class="column"><a class="button is-info levelButton animated zoomIn" v-on:click="clickMarker(allEvent)">Level 1 <br><span class="icon is-small"><i class="fa fa-unlock"></i></span></a></div>
+            <div class="column"><a class="button is-info levelButton animated zoomIn" disabled>Level 2 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
+            <div class="column"><a class="button is-info levelButton animated zoomIn" disabled>Level 3 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
+            <div class="column"><a class="button is-info levelButton animated zoomIn" disabled>Level 4 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
         </div>
         <div class="columns is-mobile">
-            <div class="column"><a class="button is-info levelButton" disabled>Level 5 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
-            <div class="column"><a class="button is-info levelButton" disabled>Level 6 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
-            <div class="column"><a class="button is-info levelButton" disabled>Level 7 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
-            <div class="column"><a class="button is-info levelButton" disabled>Level 8 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
+            <div class="column"><a class="button is-info levelButton animated zoomIn" disabled>Level 5 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
+            <div class="column"><a class="button is-info levelButton animated zoomIn" disabled>Level 6 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
+            <div class="column"><a class="button is-info levelButton animated zoomIn" disabled>Level 7 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
+            <div class="column"><a class="button is-info levelButton animated zoomIn" disabled>Level 8 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
         </div>
         <div class="columns is-mobile">
-            <div class="column"><a class="button is-info levelButton" disabled>Level 9 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
-            <div class="column"><a class="button is-info levelButton" disabled>Level 10 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
-            <div class="column"><a class="button is-info levelButton" disabled>Level 11 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
-            <div class="column"><a class="button is-info levelButton" disabled>Level 12 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
+            <div class="column"><a class="button is-info levelButton animated zoomIn" disabled>Level 9 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
+            <div class="column"><a class="button is-info levelButton animated zoomIn" disabled>Level 10 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
+            <div class="column"><a class="button is-info levelButton animated zoomIn" disabled>Level 11 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
+            <div class="column"><a class="button is-info levelButton animated zoomIn" disabled>Level 12 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
         </div>
         <div class="columns is-mobile">
-            <div class="column"><a class="button is-info levelButton" disabled>Level 13 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
-            <div class="column"><a class="button is-info levelButton" disabled>Level 14 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
-            <div class="column"><a class="button is-info levelButton" disabled>Level 15 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
-            <div class="column"><a class="button is-info levelButton" disabled>Level 16 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
+            <div class="column"><a class="button is-info levelButton animated zoomIn" disabled>Level 13 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
+            <div class="column"><a class="button is-info levelButton animated zoomIn" disabled>Level 14 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
+            <div class="column"><a class="button is-info levelButton animated zoomIn" disabled>Level 15 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
+            <div class="column"><a class="button is-info levelButton animated zoomIn" disabled>Level 16 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
         </div>
         <div class="columns is-mobile">
-            <div class="column"><a class="button is-info levelButton" disabled>Level 17 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
-            <div class="column"><a class="button is-info levelButton" disabled>Level 18 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
-            <div class="column"><a class="button is-info levelButton" disabled>Level 19 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
-            <div class="column"><a class="button is-info levelButton" disabled>Level 20 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
+            <div class="column"><a class="button is-info levelButton animated zoomIn" disabled>Level 17 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
+            <div class="column"><a class="button is-info levelButton animated zoomIn" disabled>Level 18 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
+            <div class="column"><a class="button is-info levelButton animated zoomIn" disabled>Level 19 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
+            <div class="column"><a class="button is-info levelButton animated zoomIn" disabled>Level 20 <br><span class="icon is-small"><i class="fa fa-lock"></i></span></a></div>
         </div>
   </template>
 
@@ -40,9 +40,9 @@
     </div>
     <div class="columns is-mobile">
         <div class="column is-two-thirds">
-            <img class="quistionImage" src="https://files.adme.ru/files/news/part_130/1302265/10579915-16-1000-1d0a0ae271-1477569002.jpg" alt="Placeholder image">
+            <img class="quistionImage animated bounceInLeft" src="https://files.adme.ru/files/news/part_130/1302265/10579915-16-1000-1d0a0ae271-1477569002.jpg" alt="Placeholder image">
         </div>
-        <div class="column"><br>
+        <div class="column animated bounceInRight"><br>
             <div class="columns is-mobile">
                 <div class="column"><a class="button is-info levelButton">Аделаида</a></div>
             </div>
@@ -83,4 +83,10 @@ export default {
     width: 100%;
     height: 70px;
 }
+
+.quistionImage{
+    height: 400px;
+    border-radius: 5px;
+}
+
 </style>

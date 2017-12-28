@@ -1,11 +1,61 @@
 <template>
-<div>
+<div> 
+
+
+<nav class="level is-mobile navic">
+
+  <div class="level-item has-text-centered">
+    <div>
+        <nav class="level is-mobile">
+            <div class="level-item has-text-centered">
+                <figure class="image is-48x48">
+                    <img class="iconUser" src="https://i.pinimg.com/736x/b3/ef/af/b3efaf8736889073351cac8a415c6c69--swag-friends.jpg" alt="Placeholder image">
+                </figure>
+            </div>
+            <div class="level-item has-text-centered navigation">
+                <div>
+                    <p class="heading">Jane Doe</p>
+                    <p class="title"><span class="icon is-small"><i class="fa fa-cubes" aria-hidden="true"></i></span>&nbsp; : {{ allScore }}</p>
+                </div>
+            </div>
+        </nav>
+    </div>
+  </div>
+
+  <div class="level-item has-text-centered">
+    <div>
+        <!-- <span class="icon is-large">
+            <span class="fa-stack">
+                <a class="fa fa-circle fa-stack-2x"></a>
+                <a class="fa fa-shopping-cart fa-stack-1x fa-inverse"></a>
+            </span>
+        </span> -->
+
+
+        <span class="icon is-large" v-on:click="menu=1"><a class="button is-medium is-link fa fa-3x fa fa-shopping-cart" aria-hidden="true" title="Магазин"></a></span>
+        <span class="icon is-large" v-on:click="menu=0"><a class="button is-medium is-link fa fa-3x fa fa-bars" aria-hidden="true" title="Уровни"></a></span>
+        <span class="icon is-large" v-on:click="menu=2"><a class="button is-medium is-link fa fa-3x fa fa-star" aria-hidden="true" title="Рейтинг"></a></span>
+        <span class="icon is-large" v-on:click="menu=3"><a class="button is-medium is-link fa fa-3x fa fa-info-circle" aria-hidden="true" title="Помощь"></a></span>
+    </div>
+  </div>
+
+  <div class="level-item has-text-centered">
+    <div>
+        {{ level }} <span class="icon is-small"><i class="fa fa-key" title="Текущий уровень"></i></span>
+        {{ hint }} <span class="icon is-small"><i class="fa fa-eye" title="Подсказки"></i></span>
+        {{ money }}<span class="icon is-small"><i class="fa fa-rub" title="Валюта"></i></span>
+    </div>
+  </div>
+
+</nav>
+
+
 
             <div class="card hero mainCard is-bold">
-
+<!-- 
                 <header class="card-header is-primary">
 
-                <div class="media firstPanel">
+                <div class="media firstPanel" style="margin-top: 0.5%">
                     <div class="media-left">
                         <figure class="image is-48x48">
                         <img class="iconUser" src="https://i.pinimg.com/736x/b3/ef/af/b3efaf8736889073351cac8a415c6c69--swag-friends.jpg" alt="Placeholder image">
@@ -44,9 +94,9 @@
                     </div>
 
 
-                </header>
+                </header> -->
 
-                <div class="card-content" style="height: 490px;">
+                <div class="container card-content">
 
                     <div class="content">           
                         <div v-if="menu==0">
@@ -64,7 +114,7 @@
                     </div>
                 </div>
 
-                <footer class="card-footer">
+                <footer class="card-footer foot">
                     <a href="/" class="card-footer-item"><span class="icon is-small"><i class="fa fa-reply"></i></span>&nbsp;Выйти</a>
                     <a href="#" class="card-footer-item"><span class="icon is-small"><i class="fa fa-retweet"></i></span>&nbsp;Рассказать о игре друзьям</a>
                     <a href="#" class="card-footer-item"><span class="icon is-small"><i class="fa fa-fighter-jet"></i></span>&nbsp;Бросить вызов другу</a>
@@ -86,8 +136,8 @@ export default {
   data () {
     return {
       level: 1,
-      hint: 1,
-      score: 0,
+      hint: 3,
+      money: 5,
       allScore: 0,
       menu: 0
     }
@@ -106,35 +156,29 @@ export default {
     margin-left: 45%;
     margin-top: 15%;
 }
-.quistionImage{
-    height: 400px;
-}
+
 .iconUser{
     border-radius: 5px;
 }
-.firstPanel{
-    margin-left: 2%;
-    margin-top: 2%;
-}
-.cost{
-    margin-top: 2%;
-    margin-left: 16%;
-    text-align: center;
-}
-.hint{
-    margin-top: 2%;
-    margin-left: 2%;
-    text-align: center;
-}
+
 .question{
     margin-bottom: 2%;
     text-align: center;
 }
-.shop{
-    margin-top: 2%;
-    margin-left: 20.5%;
-}
+
 .mainCard{
+    background-color: whitesmoke;
+}
+
+.navigation{
+    margin-left: 10%;
+}
+
+.navic{
+    margin-top: 1%;
+}
+
+.foot{
     background-color: white;
 }
 </style>
